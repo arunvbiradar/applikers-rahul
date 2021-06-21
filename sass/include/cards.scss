@@ -1,0 +1,244 @@
+.animated-cards {
+    counter-reset: card-with-icon;
+}
+.card {
+    &.card-with-icon {
+        border: 0;
+        height: 100%;
+        background: transparent;
+        transition: all 500ms ease;
+        counter-increment: card-with-icon;
+
+        .card-body {
+            display: flex;
+            overflow: hidden;
+            padding: 1.5em 2em;     
+            position: relative;
+            margin-bottom: 2em;
+            align-items: flex-end;
+            border-radius: .25rem;
+            background-color: $color-black-dark;
+
+            &::before {
+                top: .5em;
+                left: .5em;
+                opacity: 0.07;
+                font-size: 50px;
+                line-height: 1em;
+                position: absolute;
+                color: $color-grey;
+                content: '0'counter(card-with-icon)'';
+            }
+
+            &::after {
+                bottom: 0;
+                content: '';
+                width: 100px;
+                height: 80px;
+                right: -120px;
+                display: block;
+                position: absolute;
+                transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transform: scaleX(0) skewX(0);
+                -ms-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                background-color: $color-primary-dark;
+            }
+        }
+
+        .icon {
+            top: .5em;
+            right: .5em;
+            color: $primary;
+            font-size: 64px;
+            line-height: 1em;
+            position: absolute;
+            transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+        }
+
+        .card-title {
+            margin-top: 3em;
+            margin-bottom: 0;
+        }
+
+        .icon {
+            font-size: 3em;
+        }
+
+        &.bg-dark, &.bg-primary, &.bg-secondary {
+            color: $color-grey-light;
+        }
+
+        &:hover {
+            .card-body {
+                color: $color-black;
+                background-color: $primary !important;
+            }
+            
+            &.bg-dark, &.bg-primary, &.bg-secondary, .icon {
+                color: $color-black;
+            }
+
+            &.bg-dark, &.bg-primary, &.bg-secondary {
+                background-color: $primary !important;
+            }
+
+            .card-body {
+                &::before {
+                opacity: 1;
+                color: $color-primary-dark;
+                }
+
+                &::after {
+                    transform: scaleX(2) skewX(-32deg);
+                }
+            }
+        }
+
+        @media (max-width: 576px) {
+            min-height: 165px;
+
+            .icon {
+                font-size: 2em;
+            }
+        }
+    }
+
+    &.card-blog {
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+
+        .blog-img {
+            display: block;
+            min-height: 310px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: $color-grey-light;
+        }
+
+        .card-title {
+            font-size: 2em;
+            margin-top: .5em;
+            line-height: 38px;
+            margin-bottom: 0.6em;
+            text-transform: uppercase;
+        }
+
+        .card-text {
+            margin-bottom: 0;
+            padding-bottom: 1.6em;
+        }
+        
+        .card-body {
+            padding-top: 0;
+            text-align: center;
+            padding-left: 1.8em;
+            padding-right: 1.8em;
+        }
+
+        .blog-meta {
+            font-size: 1.2em;
+            margin-bottom: 0;
+            margin-top: -30px;
+            border-radius: 10px;
+            @extend .font-primary;
+            background-color: $white;
+            text-transform: uppercase;
+            box-shadow: 0 4px 5px 0 $color-grey-light;
+
+            .far {
+                margin-right: .2em;
+                @extend .text-primary;
+            }
+
+            li {
+                margin-right: 0;
+                padding: .8em 1em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            border-radius: 10px;
+            background-color: $white;
+
+            & + .card {
+                margin-top: 2em;
+            }
+
+            .card-body {
+                padding-bottom: 2em;
+            }
+
+            .blog-meta  {
+                margin-left: -1em;
+                margin-right: -1em;
+
+                li {
+                    padding: .8em .5em;
+                }
+            }
+        }
+    }
+
+    &.card-testimonial {
+        border: 0;
+        padding: 3em;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 4px 5px 0 $color-grey-light;
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(./../../assets/images/quote.svg);
+        }
+
+        &::before {
+            left: 3%;
+            top: -10%;
+            width: 10%;
+            height: 22%;
+        }
+
+        &::after {
+            right: 3%;
+            bottom: 0;
+            width: 25%;
+            height: 65%;
+            opacity: 10%;
+            background-position: 0 0;
+            transform: rotate(-180deg);
+        }
+
+        .card-body {
+            padding: 0;
+            line-height: 1.8;
+
+            p {
+                margin-bottom: 1.5em;
+            }
+
+            .name, .designation {
+                letter-spacing: 2px;
+            }
+            .name {
+                margin-bottom: 0;
+            }
+
+            .designation {
+                color: $color-primary-dark;
+            }
+        }
+    }
+}

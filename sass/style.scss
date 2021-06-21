@@ -1,0 +1,21 @@
+/* sass template */
+@import './include/variables.scss';
+@import './include/bootstrap-variables-overwrite.scss';
+@import './scss/bootstrap.scss';
+@import './include/bootstrap-overwrite.scss';
+@import './include/typography.scss';
+@import './include/colors.scss';
+@import './include/global.scss';
+@import './include/cards.scss';
+@import './include/buttons.scss';
+@import './include/forms.scss';
+@import './include/header.scss';
+@import './include/footer.scss';
+
+@import './include/pages/common.scss';
+@import './include/pages/home.scss';
+@import './include/pages/about-us.scss';
+@import './include/pages/contact-us.scss';
+@import './include/pages/services.scss';
+
+// @import './include/responsive.scss';

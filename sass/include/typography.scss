@@ -1,0 +1,34 @@
+// fonts
+.font-default {
+    font-family: $font-default;
+}
+.font-primary {
+    font-family: $font-primary;
+}
+.font-secondary {
+    font-family: $font-secondary;
+}
+
+// font size
+.font-size-12 {
+    font-size: 12px;   
+}
+.font-size-14 {
+    font-size: 14px;   
+}
+.font-size-16 {
+    font-size: 16px;   
+}
+.font-size-20 {
+    font-size: 20px;   
+}
+
+// headers and titles
+h1, h2, h3, h4, h5, h6, .title, .heading {
+    font-family: $font-primary;
+}
+
+// paragraph, default and secondary
+body, p, .text-secondary {
+    font-family: $font-default;
+}

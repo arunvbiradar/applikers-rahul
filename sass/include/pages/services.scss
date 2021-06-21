@@ -1,0 +1,43 @@
+// hero banner
+.our-services {
+    .hero-banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 12%;
+        background-image: url(./../../assets/images/featured-image-3.jpg);
+    }
+
+    .services-info {
+        color: $color-black;
+
+        p {
+            color: $color-black-light;
+        }
+
+        .card-with-icon {
+            .card-body {
+                background-color: $color-grey;
+            }
+
+            .card-body::before {
+                color: $color-grey-dark;
+            }
+
+            .icon {
+                color: $secondary;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .title-main {
+                margin: auto;
+                max-width: 75%;
+                margin-bottom: .5em;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
