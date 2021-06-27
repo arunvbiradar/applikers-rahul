@@ -1,3 +1,10 @@
+<?php
+    if($_SERVER['SERVER_NAME'] === 'localhost') {
+        $baseUrl = 'http://localhost:5500/_projects/inprogress/rahul/';
+    } else {
+        $baseUrl = 'http://vishwam.tech';
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <base href="http://localhost/_projects/inprogress/rahul/">
+    <base href="<?= $baseUrl; ?>">
 
     <!-- fonts -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
@@ -17,7 +24,6 @@
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
 
 <body>
@@ -62,13 +68,12 @@
                     </ul>
                 </div>
                 <div class="navbar-right d-flex">
-                    <div class="call-us">
-                        <img src="./assets/images/chat-icon.png" alt="">
+                    <a href="tel:8123098861" class="call-us"><img src="./assets/images/chat-icon.png" alt="">
                         <div class="content">
                             <span class="text">Call Anytime</span>
-                            <a href="tel:8123098861"><span class="number">8123 098861</span></a>
+                            <span class="number">8123 098861</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </nav>

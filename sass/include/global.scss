@@ -23,7 +23,7 @@ button, button:focus {
 
 // container fluid
 .container-fluid {
-    @media (min-width: '576px') {
+    @media (min-width: 1200px) {
         padding-left: 60px;
         padding-right: 60px;
     }

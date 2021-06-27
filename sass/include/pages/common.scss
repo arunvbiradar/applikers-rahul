@@ -14,7 +14,7 @@
     }
 
     .card-body, .card::before {
-        max-width: 550px;
+        max-width: 45%;
         border-radius: 50%;
         position: absolute;
     }
@@ -82,7 +82,11 @@
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 991px) {
+        .card::before {
+            display: none;
+        }
+
         .card-body {
             top: auto;
             right: auto;
@@ -97,6 +101,7 @@
         }
 
         .card-body {
+            max-width: 100%;
             padding-left: 2em;
             padding-right: 2em;
             padding-bottom: 1em;
@@ -150,7 +155,7 @@
         text-align: right;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 991px) {
         padding-top: 0;
 
         .bg-primary {

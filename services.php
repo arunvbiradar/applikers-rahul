@@ -19,14 +19,14 @@
     <section class="services-info bg-light">
         <div class="container">
             <div class="row animated-cards">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <h2 class="title-main">We Shape the perfect solutions.</h2>
                     <p>We assist industries in digitalization of the manufacturing sector to reach market faster from
                         'concept-to-component' driven by the horizon of pioneer technologies in architecture, product
                         design and manufacturing, enhancing rapid replacement of conventional practices in industries.
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-cash-register"></i></span>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-print"></i></span>
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-drafting-compass"></i></span>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-tools"></i></span>
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-receipt"></i></span>

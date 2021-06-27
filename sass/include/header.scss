@@ -36,7 +36,7 @@
     }
 
     .nav-link {
-        font-size: 1.4em;
+        font-size: 20px;
         letter-spacing: 2px;
         @extend .font-primary;
         text-transform: uppercase;
@@ -44,12 +44,12 @@
 
     .navbar-brand {
         font-size: 2em;
-        letter-spacing: .1em;
+        letter-spacing: 1px;
         @extend .font-primary;
         text-transform: uppercase;
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 991px) {
         position: relative;
 
         .container-fluid {
@@ -66,16 +66,20 @@
 
         .navbar-brand {
             order: 2;
-            margin-left: 0;
+            margin: auto;
         }
         
         .navbar-right  {
             order: 3;
-            margin-left: auto;
         }
 
         .navbar-collapse {
             order: 4;
+        }
+    }
+    @media(min-width: 577px) {
+        .navbar-brand {
+            margin: 0 auto 0 0;
         }
     }
 }
@@ -112,8 +116,6 @@
 // call us
 .call-us {
     display: flex;
-    margin-left: 4em;
-    padding-left: 4em;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     @extend .font-primary;
@@ -140,24 +142,34 @@
     .number {
         font-size: 2em;
         line-height: 22px;
-        color: $color-grey-light;
 
         &:hover {
             color: $color-grey-dark;
         }
     }
+    .text, .number {
+        color: $color-grey-light;
+    }
+
+    img {
+        width: auto;
+        max-height: 30px;
+    }
 
     
-    @media (max-width: 576px) {
+    @media (max-width: 991px) {
         margin-left: 0;
         padding: .5em 0;
-
-        .number {
-            font-size: 1.5em;
+    }
+    
+    @media (max-width: 576px) {
+        .content {
+            display: none;
         }
+    }
 
+    @media (min-width: 577px) {        
         img {
-            width: auto;
             max-height: 40px;
         }
     }

@@ -1,6 +1,6 @@
 <!-- contact -->
 <section class="contact">
-    <div class="col-md-7 m-auto">
+    <div class="container-lg">
         <div class="bg-primary">
             <div class="row">
                 <div class="col-md-8">

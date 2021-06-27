@@ -18,12 +18,12 @@
 
         <div class="content">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h2>Active in Verticles.</h2>
                     <p>We are operational in 4 verticles and offering best in class solutions, Custom & Additive
                         Manufacturing, 3D Printing for Construction, E-Commerce and Renewable Energy.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="accordion" id="experience-content">
                         <div class="accordion-item">
                             <h4 class="accordion-header" id="headingOne">

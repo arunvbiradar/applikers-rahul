@@ -70,14 +70,14 @@
     <section class="services bg-dark">
         <div class="container">
             <div class="row animated-cards">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <h2 class="title-main">We Shape the perfect solutions.</h2>
                     <p>We assist industries in digitalization of the manufacturing sector to reach market faster from
                         'concept-to-component' driven by the horizon of pioneer technologies in architecture, product
                         design and manufacturing, enhancing rapid replacement of conventional practices in industries.
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-cash-register"></i></span>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-print"></i></span>
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-drafting-compass"></i></span>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-tools"></i></span>
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card card-with-icon animated">
                         <div class="card-body">
                             <span class="icon"><i class="fas fa-receipt"></i></span>
@@ -172,9 +172,9 @@
     <!-- blog -->
     <section class="blog bg-light">
         <h2 class="title">Live updates</h2>
-        <div class="container">
+        <div class="container-lg">
             <div class="row justify-content-center">
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xl-4">
                     <div class="card card-blog">
                         <a href="https://www.headmade-materials.de/en/news/post/with-3d-printing-to-the-top-of-formula-student"
                             target="_blank" class="blog-img"
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xl-4">
                     <div class="card card-blog">
                         <a href="https://www.headmade-materials.de/en/news/post/headmade-materials-enables-high-end-titanium-pedals-for-bikes"
                             target="_blank" class="blog-img"

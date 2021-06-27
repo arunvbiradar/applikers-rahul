@@ -2,13 +2,7 @@
 .welcome-content {
     position: relative;
 
-    .carousel {        
-        .carousel-item {
-            @media (min-width: 720px) {
-                height: 100vh;
-            }
-        }
-
+    .carousel {
         .carousel-caption {
             top: 50%;
             right: auto;
@@ -23,7 +17,7 @@
 
             h2 {
                 line-height: .8;
-                font-size: 10em;
+                font-size: 6em;
             }
 
             h5 {
@@ -32,13 +26,16 @@
                 margin-bottom: .8em;
             }
 
-            @media (max-width: 576px) {
+            @media (max-width: 991px) {
+                left: 0;
+                right: 0;
+                top: auto;
+                bottom: 24px;
                 padding: 1em;
-                color: $black;
+                margin: auto;
+                max-width: 90%;
                 transform: none;
-                max-width: 100%;
-                position: static;
-                text-align: center;
+                text-align: center;               
 
                 h2 {
                     font-size: 2em;
@@ -53,6 +50,12 @@
                 .btn {
                     font-size: .8em;
                     margin-top: 1em;
+                }
+            }
+
+            @media (min-width: 992px) and (max-width: 1200px) {
+                h2 {
+                    font-size: 3em;
                 }
             }
         }
@@ -87,18 +90,29 @@
                 background-image: url(./../../assets/images/chevron-right.svg);
             }
             
-            @media (max-width: 576px) {
-                display: none;
+            @media (max-width: 991px) {
+                &.carousel-control-prev, 
+                &.carousel-control-next {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &.carousel-control-prev{
+                    left: 16px;
+                }
+                &.carousel-control-next {
+                    right: 16px;
+                }
             }
         }
 
         @media (max-width: 576px) {
-            .carousel-inner {
-                padding-bottom: 3em;
+            .carousel-indicators {
+                bottom: 0;
             }
     
             .carousel-indicators [data-bs-target] {
-                background-color: $black;
+                background-color: $color-grey-light;
             }
         }
     }
@@ -137,8 +151,8 @@
     }
 
     .timings {
-        top: 32%;
-        @media (max-width: 576px) {
+        bottom: 32%;
+        @media (max-width: 991px) {
             display: none;
         }
     }
@@ -203,7 +217,7 @@
         color: $color-black-dark;
         background-color: $primary;
         
-        @media (max-width: 576px) {
+        @media (max-width: 991px) {
             transform: scale(0.7);
         }
     }
@@ -221,7 +235,7 @@
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 991px) {
         h2 {
             margin-top: 0;
             font-size: 2em;

@@ -19,13 +19,13 @@
     <section class="info">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="left-content">
                         <div class="top card border-0"><img src="./assets/images/featured-image-1.jpg" alt=""></div>
                         <div class="bottom card border-0"><img src="./assets/images/featured-image-2.jpg" alt=""></div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="content">
                         <h2 class="title-main">We Shape the perfect solutions.</h2>
                         <h3 class="font-primary text-primary">We are committed to providing our customers with

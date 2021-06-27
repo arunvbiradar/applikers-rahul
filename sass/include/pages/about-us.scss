@@ -66,7 +66,7 @@
             padding-left: 3em;
         }
 
-        @media (max-width: 576px) {
+        @media (max-width: 991px) {
             .left-content {
                 .top {
                     margin-left: 5em;
@@ -83,7 +83,7 @@
                 margin-bottom: 3em;
             }
             
-            .col-md-6:first-child {
+            .col-lg-6:first-child {
                 order: 1;
             }
         }
