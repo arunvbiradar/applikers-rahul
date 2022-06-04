@@ -1,0 +1,181 @@
+// hero banner
+.about-us {
+    .hero-banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 12%;
+        background-image: url(./../../assets/images/featured-image-3.jpg);
+    }
+
+    .testimonial {        
+        background-color: $color-grey-light;
+    }
+
+    .info {
+        line-height: 2;
+
+        .left-content{
+            position: relative;
+
+            &::before {
+                top: 0;
+                left: 0;
+                width: 5px;
+                content: '';
+                bottom: 75%;
+                position: absolute;
+                border-radius: 5px;
+                background-color: $primary;
+            }
+        }
+
+        .card {
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+                -ms-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+            }
+
+            &.top {
+                margin-left: 14em;
+            }
+
+            &.bottom {
+                max-width: 430px;
+                margin-top: -11em;
+            }
+        }
+
+        .title-main {
+            margin-bottom: 30px;
+        }
+
+        .text-primary {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .list-unstyled {
+            margin-bottom: 2em;
+        }
+        
+        .content {
+            padding-left: 3em;
+        }
+
+        @media (max-width: 576px) {
+            .left-content {
+                .top {
+                    margin-left: 5em;
+                }
+
+                .bottom {
+                    max-width: 265px;
+                    margin-top: -7em;
+                }
+            }
+
+            .content {
+                padding-left: 0;
+                margin-bottom: 3em;
+            }
+            
+            .col-md-6:first-child {
+                order: 1;
+            }
+        }
+    }
+
+    .more-info {
+        .title {
+            line-height: 1;
+            text-align: left;
+        }
+
+        .tab-content {
+            line-height: 2;
+        }
+
+        .content {
+            line-height: 2;
+            padding-left: 2em;
+            
+            p {
+                margin-bottom: 2em;
+            }
+
+            .list-unstyled {
+                margin-left: 2em;
+
+                li {
+                    margin-bottom: .5em;
+                }
+            }
+        }
+
+        @media (max-width: 576px) {
+            .tab-content {                
+                padding: 0 1em;
+            }
+
+            .title {
+                text-align: center;
+            }
+
+            .col-md-7 {
+                .content {
+                    padding: 1em;
+                    margin-top: 1em;
+                    background-color: $color-grey-light;
+
+                    .d-flex {
+                        flex-direction: column;
+                        align-items: flex-start !important;
+
+                        img {
+                            margin-bottom: 1em;
+                        }
+                    }
+                    ul {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .client-list {
+        border-top: 1px solid $color-grey-light;
+
+        .title {
+            line-height: 1;
+            text-align: left;
+        }
+
+        .list-inline {
+            margin-left: 5em;
+            justify-content: start;
+        }
+
+        .list-inline-item {
+            opacity: 40%;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 576px) {
+            padding: 0 1em;
+
+            ul.list-inline {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .title {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+// colors
+$blue           : $color-primary; // primary color
+$primary        : $color-primary;
+$secondary      : $color-secondary;
+$success        : $color-success;
+$info           : $color-info;
+$warning        : $color-warning;
+$danger         : $color-danger;
+$light          : $color-grey-light;
+$dark           : $color-black;
+
+// body
+$body-color     : $dark !default;
+
+// links
+$link-decoration        : none;
+$link-hover-decoration  : underline;
+$link-color             : $secondary !default;
